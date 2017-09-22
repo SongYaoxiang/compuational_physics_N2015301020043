@@ -1,0 +1,3 @@
+[my name]
+[move]
+[photo]
