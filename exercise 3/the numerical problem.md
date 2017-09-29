@@ -44,3 +44,4 @@ pl.ylim(v_max,0.0)#取负g,故y轴取负半轴
 pl.show()
 ```
 ## result
+![result](https://github.com/Monotone1997/computationalphysics_N2015301020041/blob/master/Exercise_04/1.jpg)
