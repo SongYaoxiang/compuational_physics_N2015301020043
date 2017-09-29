@@ -7,4 +7,9 @@ The velocity of a freely falling object near Earth's surface is described by the
 Where _v_ is the velocity and _g_=9.8m/s<sup>2</sup> is the acceleration due to gravity. Write a program that employs the Euler method to compute the solution to the above equation; that is, calculate _v_ as a funtion of _t_. For simplicity, assume that the initial velocity is zero——that is, the object starts from rest——and calculate the solution for times _t_=0 to _t_=10 s. Repeat the calculation for several different values of the times step, and compare the results with the exact solution to the above equation. It turns out that for this case the Euler method gives the exact result. Verify this with your numerical results and prove it analytically. <br/>
 ## Analysis
 Consider the equation given <br/>
+
 <img src="http://latex.codecogs.com/gif.latex?\frac{dv}{dt}=-g" alt="" title="" /> <br/>
+According to the definition of differential, we have <br/>
+
+<img src="http://latex.codecogs.com/gif.latex?\frac{dv}{dt}=\frac{v(t+\Delta%20t)-v(t)}{\Delta%20t}" alt="" title="" /> <br/>
+combine the two equations, we can get
