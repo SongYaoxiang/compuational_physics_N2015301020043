@@ -17,3 +17,30 @@ Combine the two equations, we can get <br/>
 <img src="http://latex.codecogs.com/gif.latex?v(t+\Delta%20t)=v(t)-g\Delta%20t" alt="" title="" /> <br/>
 So, we can calculate the velocity at any time once we know the velocity at \Delta t before.
 ## Code
+```python
+import numpy as np    
+import pylab as pl    
+g=9.8
+v=[]
+t=[]
+v.append(0)
+t.append(0)
+dt=0.001#步长为0.001秒
+
+for i in range (10000):
+  vt=v[i]-g*dt
+  tadd=t[i]+dt
+  v.append(vt)
+  t.append(tadd)#循环10000次，共10秒
+
+t_max=t[-1]
+v_max=v[-1]
+pl.plot(t,v,'g')
+pl.title('the v as a function of t')  
+pl.xlabel('the time') 
+pl.ylabel('the velocity')
+pl.xlim(0.0,t_max)
+pl.ylim(v_max,0.0)#取负g,故y轴取负半轴
+pl.show()
+```
+## result
