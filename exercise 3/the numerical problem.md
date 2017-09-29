@@ -14,6 +14,6 @@ According to the definition of differential, we have <br/>
 <img src="http://latex.codecogs.com/gif.latex?\frac{dv}{dt}=\frac{v(t+\Delta%20t)-v(t)}{\Delta%20t}" alt="" title="" /> <br/>
 Combine the two equations, we can get <br/>
 
-<img src="http://latex.codecogs.com/gif.latex?v(t+\Delta%20t)=v(t)+g\Delta%20t" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?v(t+\Delta%20t)=v(t)-g\Delta%20t" alt="" title="" /> <br/>
 So, we can calculate the velocity at any time once we know the velocity at \Delta t before.
 ## Code
