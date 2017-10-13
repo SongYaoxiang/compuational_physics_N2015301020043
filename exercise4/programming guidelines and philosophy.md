@@ -12,4 +12,4 @@ Write each of these second-order equations as two first order equations  <br/>
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{dv_x}{dt}}=0" style="border:none;"> <br/>
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{dv_y}{dt}}=-g" style="border:none;"> <br/>
 To use Euler method,we can write each derivative in finite difference form, which leads to <br/>
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=x_{i+1}=x_i+v_{x,i}\Delta%20t" style="border:none;">
+<img src="http://latex.codecogs.com/gif.latex?x_{i+1}=x_i+v_{x,i}\Delta%20t" alt="" title="" />
