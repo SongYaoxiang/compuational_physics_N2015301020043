@@ -28,4 +28,107 @@ Add the force to the equations of motion leads to <br/>
 <img src="http://latex.codecogs.com/gif.latex?v_{x,i+1}=v_{x,i}-\frac{(1-\frac{ay}{T_0})^{\alpha}B_2vv_{x,i}}{m}\Delta%20t" alt="" title="" /> <br/>
 <img src="http://latex.codecogs.com/gif.latex?y_{i+1}=y_i+v_{y,i}\Delta%20t" alt="" title="" /> <br/>
 <img src="http://latex.codecogs.com/gif.latex?v_{y,i+1}=v_{y,i}-g\Delta%20t-\frac{(1-\frac{ay}{T_0})^{\alpha}B_2vv_{y,i}}{m}\Delta%20t" alt="" title="" /> <br/>
+## code
+### 有无空气阻力对比
+```prthon
+from math import *
+from pylab import *
 
+x=[0]
+y=[0]
+x1=[0]
+y1=[0]
+vx=[500]
+vy=[500]
+vx1=[500]
+vy1=[500]
+g=9.8
+b2m=4e-5
+a=6.5e-3
+t=100000
+dt=0.1
+T_0=288
+
+for i in range(int(t/dt)):
+	c=sqrt(vx1[i]**2+vy1[i]**2)
+	p=(2.71828)**(-(y1[i]*0.00001))
+	f=b2m*c**2*p*(1-a*y1[i]/T_0)**2.5
+	theta_x=vx1[i]/c
+	theta_y=vy1[i]/c
+	v_x1=vx1[i]-f*theta_x*dt
+	v_y1=vy1[i]-f*theta_y*dt-g*dt
+	vx1.append(v_x1)
+	vy1.append(v_y1)
+	temp_x1=x1[i]+vx1[i]*dt
+	temp_y1=y1[i]+vy1[i]*dt
+	if y1[i]>=0:
+		x1.append(temp_x1)
+		y1.append(temp_y1)
+	else:
+		break
+plot(x1,y1,color='r',label="Air drag with altitude")
+
+for i in range(int(t/dt)):
+	v_x=vx[i]
+	v_y=vy[i]-g*dt
+	vx.append(v_x)
+	vy.append(v_y)
+	temp_x=x[i]+vx[i]*dt
+	temp_y=y[i]+vy[i]*dt
+	if y[i]>=0:
+		x.append(temp_x)
+		y.append(temp_y)
+	else:
+		break
+plot(x,y,color='y',label="No air drag")
+
+title('Cannon shell trajectory')
+xlabel('x(m)')
+ylabel('y(m)')
+legend(loc='upper right')
+show()
+```
+### 不同角度对比
+```python
+from math import *
+from pylab import *
+
+g=9.8
+dt=0.1
+t=100000
+b2m=4e-5
+a=6.5e-3
+
+def cannon(vx,vy):
+	x=[0.]
+	y=[0.]
+	for i in range(int(t/dt)):
+		c=sqrt(vx[i]**2+vy[i]**2)
+		p=2.71828**(-(y[i])*0.00001)
+		f=b2m*c**2*p*(1-a*y[i]/288)**2.5
+		theta_x=vx[i]/c
+		theta_y=vy[i]/c
+		v_x=vx[i]-f*theta_x*dt
+		v_y=vy[i]-g*dt-f*theta_y*dt
+		vx.append(v_x)
+		vy.append(v_y)
+		x_temp=x[i]+vx[i]*dt
+		y_temp=y[i]+vy[i]*dt
+		if y[i]>=0:
+			x.append(x_temp)
+			y.append(y_temp)
+		else:
+			break
+	plot(x,y)
+
+for j in [30,35,40,45,50,55,60,70,75]:
+	theta=j*3.1415926/180
+	vx=[1000*cos(theta)]
+	vy=[1000*sin(theta)]
+	cannon(vx,vy)
+title('Cannon shell trajectory')
+xlabel('x(m)')
+ylabel('y(m)')
+plot()
+show()
+```
