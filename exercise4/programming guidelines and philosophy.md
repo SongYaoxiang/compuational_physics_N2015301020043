@@ -134,4 +134,4 @@ ylabel('y(m)')
 plot()
 show()
 ```
-![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise4/Figure_1.png)
+![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise4/Figure_2.png)
