@@ -135,3 +135,5 @@ plot()
 show()
 ```
 ![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise4/Figure_2.png)
+## Conclusion
+从上面两图可以得到，加入空气阻力因素后，炮弹射程明显减短，通过对不同数据的实验，随着出射速度的增大，减短的距离也越明显，而考虑空气阻力时，随着角度的增加，炮弹射程先增大后减小，根据相关资料，当不考虑空气阻力时，45度角射程最远，考虑空气阻力时，角度略小于45度时，射程最远。
