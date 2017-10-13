@@ -12,4 +12,20 @@ Write each of these second-order equations as two first order equations  <br/>
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{dv_x}{dt}}=0" style="border:none;"> <br/>
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=\frac{dv_y}{dt}}=-g" style="border:none;"> <br/>
 To use Euler method,we can write each derivative in finite difference form, which leads to <br/>
-<img src="http://latex.codecogs.com/gif.latex?x_{i+1}=x_i+v_{x,i}\Delta%20t" alt="" title="" />
+<img src="http://latex.codecogs.com/gif.latex?x_{i+1}=x_i+v_{x,i}\Delta%20t" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?v_{x,i+1}=v_{x,i}" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?y_{i+1}=y_i+v_{x,i}\Delta%20t" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?v_{y,i+1}=v_{y,i}-g\Delta%20t" alt="" title="" /> <br/>
+As the drag force on cannon shell is given by <br/>
+<img src="http://latex.codecogs.com/gif.latex?F_{drag}=-B_2v^{2}" alt="" title="" /> <br/>
+Think about the reduced air density at high altitude,the equation is given  <br/>
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=F_{drag}^{*}=(1-\frac{ay}{T_0})^{\alpha}F_{drag}(y=0)" style="border:none;"> <br/>
+Where <img src="http://latex.codecogs.com/gif.latex?v=\sqrt{x^{2}+y^{2}}" alt="" title="" /> so we can have <br/> We can get <br/>
+<img src="http://latex.codecogs.com/gif.latex?F_{drag,x}=-(1-\frac{ay}{T_0})^{\alpha}B_2vv_{x}" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?F_{drag,y}=-(1-\frac{ay}{T_0})^{\alpha}B_2vv_{y}" alt="" title="" /> <br/>
+Add the force to the equations of motion leads to <br/>
+<img src="http://latex.codecogs.com/gif.latex?x_{i+1}=x_i+v_{x,i}\Delta%20t" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?v_{x,i+1}=v_{x,i}-\frac{(1-\frac{ay}{T_0})^{\alpha}B_2vv_{x,i}}{m}\Delta%20t" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?y_{i+1}=y_i+v_{y,i}\Delta%20t" alt="" title="" /> <br/>
+<img src="http://latex.codecogs.com/gif.latex?v_{y,i+1}=v_{y,i}-g\Delta%20t-\frac{(1-\frac{ay}{T_0})^{\alpha}B_2vv_{y,i}}{m}\Delta%20t" alt="" title="" /> <br/>
+
