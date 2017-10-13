@@ -88,6 +88,8 @@ ylabel('y(m)')
 legend(loc='upper right')
 show()
 ```
+![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise%203/Figure_1.png)
+
 ### 不同角度对比
 ```python
 from math import *
