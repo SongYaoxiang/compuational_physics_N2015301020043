@@ -5,5 +5,6 @@ Calculate the trajectory of our cannon shell including both air drag and the red
 ## analysis
 According to Newton's second law, the equations can be written as<br/>
 <img src="http://latex.codecogs.com/gif.latex?\frac{dv}{dt}=\frac{v(t+\Delta%20t)-v(t)}{\Delta%20t}" alt="" title="" /> <br/>
+
 Combine the two equations, we can get<br/>
 <img src="http://latex.codecogs.com/gif.latex?\frac{d^{2}x}{dt^{2}}=0" alt="" title="" /> <br/>
