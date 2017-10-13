@@ -162,6 +162,7 @@ while True:
     screen.blit(mouse_cursor, (x, y))  
     pygame.display.update()  
 ```
-![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise4/Figure_1.png)
+![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise4/QQ%E5%9B%BE%E7%89%8720171014010351.gif)
+此处借鉴于网络上一个例子，加以修改，使得炮弹图片能够随着鼠标而动，代码中所需的background.jpg和shell.jpg两个图片已传至exercise4文件夹中，此代码仍在完善中，待续。。。
 
 
