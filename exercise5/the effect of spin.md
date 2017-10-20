@@ -25,10 +25,12 @@ Calculate the effect of backspin on a fastball. How much does an angular velocit
 <img src="http://latex.codecogs.com/gif.latex?v_{y,i+1}=v_{y,i}-g\Delta%20t" alt="" title="" /> <br/>
 <img src="http://latex.codecogs.com/gif.latex?z_{i+1}=z_{i}+v_{z,i}\Delta%20t" alt="" title="" /> <br/>
 <img src="http://latex.codecogs.com/gif.latex?v_{z,i+1}=v_{z,i}-\frac{S_0wv_{x,i}}{m}\Delta%20t" alt="" title="" /> <br/>
-上面式子中S<sub>0</sub>/m=4.1*10<sup>-4</sup>，w=2000rpm=209.44rad/s，可得到如下图像：  
-![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise5/Figure_2.png)
+上面式子中S<sub>0</sub>/m=4.1*10<sup>-4</sup>，w=1000rpm=104.72rad/s，可得到如下图像：  
+![result](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise5/spin.png)
 # 结论
 当考虑风阻以及棒球自身旋转时，会使球产生偏转，而球的转速以及旋转方向等均会对球的弧线轨迹产生影响。
+#### 另外，特别感谢梁旭同学，此次的三维坐标坐标系代码参考于梁旭同学
+
 
 
 
