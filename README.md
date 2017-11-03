@@ -10,3 +10,5 @@
 [python exercise_05 The effect of spin](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/exercise5/the%20effect%20of%20spin.md)
 
 [python exercise_06 the oscillatory motion](https://www.zybuluo.com/songyaoxiang/note/930581)
+
+[python exercise_06 the logistic map and the lorenz model](https://www.zybuluo.com/songyaoxiang/note/938685)
