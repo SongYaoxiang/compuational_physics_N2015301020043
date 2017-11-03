@@ -11,4 +11,4 @@
 
 [python exercise_06 the oscillatory motion](https://www.zybuluo.com/songyaoxiang/note/930581)
 
-[python exercise_06 the logistic map and the lorenz model](https://www.zybuluo.com/songyaoxiang/note/938685)
+[python exercise_07 the logistic map and the lorenz model](https://www.zybuluo.com/songyaoxiang/note/938685)
