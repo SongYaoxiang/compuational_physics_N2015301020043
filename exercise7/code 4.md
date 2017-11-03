@@ -1,0 +1,60 @@
+```python
+import pylab as pl
+t=[]
+x=[]
+y=[]
+z=[]
+x1=[]
+y1=[]
+z1=[]
+x2=[]
+y2=[]
+z2=[]
+sigma=10
+b=8/3
+dt=0.0001
+r=10
+r1=25
+r2=470/19
+x.append(1)
+y.append(0)
+z.append(0)
+x1.append(1)
+y1.append(0)
+z1.append(0)
+x2.append(1)
+y2.append(0)
+z2.append(0)
+t.append(0)
+for i in range (500000):
+    t_1=t[i]+dt
+    x_1=x[i]+sigma*(y[i]-x[i])*dt
+    y_1=y[i]-x[i]*z[i]*dt+r*x[i]*dt-y[i]*dt
+    z_1=z[i]+x[i]*y[i]*dt-b*z[i]*dt
+    x.append(x_1)
+    y.append(y_1) 
+    z.append(z_1)
+    x1_1=x1[i]+sigma*(y1[i]-x1[i])*dt
+    y1_1=y1[i]-x1[i]*z1[i]*dt+r1*x1[i]*dt-y1[i]*dt
+    z1_1=z1[i]+x1[i]*y1[i]*dt-b*z1[i]*dt  
+    x1.append(x1_1)
+    y1.append(y1_1)
+    z1.append(z1_1)
+    x2_1=x2[i]+sigma*(y2[i]-x2[i])*dt
+    y2_1=y2[i]-x2[i]*z2[i]*dt+r2*x2[i]*dt-y2[i]*dt
+    z2_1=z2[i]+x2[i]*y2[i]*dt-b*z2[i]*dt
+    x2.append(x2_1)
+    y2.append(y2_1) 
+    z2.append(z2_1)
+    t.append(t_1)  
+    
+pl.plot(t,z,label='r=10')
+pl.plot(t,z1,label='r=25')
+pl.plot(t,z2,label='r=470/19')
+pl.legend(loc='best')
+pl.xlim(0,50)
+pl.xlabel('time')
+pl.ylabel('z')
+pl.title('lorenz model  z versus time')
+pl.show()
+```
