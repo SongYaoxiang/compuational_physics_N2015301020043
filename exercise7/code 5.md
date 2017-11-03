@@ -47,4 +47,5 @@ pl.legend(loc='best')
 pl.xlabel('x')
 pl.ylabel('z')
 pl.title('lorenz model  z versus x')
-pl.show()```
+pl.show()
+```
