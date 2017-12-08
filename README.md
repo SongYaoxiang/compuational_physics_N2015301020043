@@ -18,3 +18,5 @@
 [pygame](https://github.com/SongYaoxiang/compuational_physics_N2015301020043/blob/master/%E5%85%B3%E4%BA%8Epygame%E7%BB%83%E4%B9%A0.md)
 
 [python exercise_09 the solar system](https://www.zybuluo.com/songyaoxiang/note/969817)
+
+[python exercise_10 electric potentials and fields](https://www.zybuluo.com/songyaoxiang/note/930447)
