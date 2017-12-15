@@ -20,3 +20,5 @@
 [python exercise_09 the solar system](https://www.zybuluo.com/songyaoxiang/note/969817)
 
 [python exercise_10 electric potentials and fields](https://www.zybuluo.com/songyaoxiang/note/930447)
+
+[python exercise_11 waves](https://www.zybuluo.com/songyaoxiang/note/987829)
