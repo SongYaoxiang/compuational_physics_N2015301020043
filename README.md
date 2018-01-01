@@ -22,3 +22,5 @@
 [python exercise_10 electric potentials and fields](https://www.zybuluo.com/songyaoxiang/note/930447)
 
 [python exercise_11 waves](https://www.zybuluo.com/songyaoxiang/note/987829)
+
+[final exercise  the random walks](https://www.zybuluo.com/songyaoxiang/note/1004214)
